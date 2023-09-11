@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./static/css/base.css">
+    <title>Javohir's Blog</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-sm px-5">
+                <h1>
+                    <a class="navbar-brand my_brand" href="#">Javohir's Blog</a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+                    <div class="nav__item">
+                        <div>
+                            <ul class="navbar-nav mb-0">
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link my__nav-link px-2">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link my__nav-link px-2">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link my__nav-link px-2">CV</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#!" class="nav-link my__nav-link px-2">Education</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="container wrapper px-5 mt-5 pt-5 info">
+            <div class="item">
+                <div class="d-flex col-xl-8 col-lg-10 col-12 info__info">
+                    <div class="info__img me-sm-0 me-lg-5">
+                        <img src="./static/img/My-foto.jpg" alt="" />
+                    </div>
+                    <div class="col">
+                        <div class="fullname" style="font-size: 2.6rem">Javohir Khamidullaev</div>
+                        <div class="profession">Full Stack Python Developer</div>
+                        <div class="h4">
+                            <a href="#!"><i class="bi bi-youtube text-dark me-2"></i></a>
+                            <a href="#!"><i class="bi bi-github text-dark me-2"></i></a>
+                            <a href="#!"><i class="bi bi-linkedin text-dark me-2"></i></a>
+                            <a href="#!"><i class="bi bi-telegram text-dark me-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__through">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, reprehenderit sint! Velit saepe
+                    omnis ratione id tenetur voluptatem asperiores officia.
+                </div>
+                <div class="btns">
+                    <button class="btn btn-primary shadow fw-bold me-4 px-4"> My Blog  </button>
+                    <button class="btn btn-outline-primary fw-bold px-4">About me</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- <main class="container mt-5 pt-5 px-5 main-section">
+
+    </main> -->
+    <footer>
+        <span>© 2023 javohir.com</span>
+    </footer>
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+    <script>
+        window.addEventListener("scroll", function () {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("shadow", window.scrollY > 0);
+        })
+    </script>
+
+</body>
+
+</html>
