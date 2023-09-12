@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-sm px-5">
                 <h1>
-                    <a class="navbar-brand my_brand" href="#">Javohir's Blog</a>
+                    <a class="navbar-brand my_brand" href="./index.html">Javohir's Blog</a>
                 </h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,20 +27,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-                    <div class="nav__item">
+                    <div class="nav__item bg-white">
                         <div>
                             <ul class="navbar-nav mb-0">
                                 <li class="nav-item">
-                                    <a href="#!" class="nav-link my__nav-link px-2">Blog</a>
+                                    <a href="./blog/blog.html" class="nav-link my__nav-link px-2">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#!" class="nav-link my__nav-link px-2">Projects</a>
+                                    <a href="./projects/project-list.html"
+                                        class="nav-link my__nav-link px-2">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#!" class="nav-link my__nav-link px-2">CV</a>
+                                    <a href="./cv/cv.html" class="nav-link my__nav-link px-2">CV</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#!" class="nav-link my__nav-link px-2">Education</a>
+                                    <a href="./edu/edu-list.html" class="nav-link my__nav-link px-2">Education</a>
                                 </li>
                             </ul>
                         </div>
@@ -200,6 +201,7 @@
         window.addEventListener("scroll", function () {
             var nav = document.querySelector("nav");
             nav.classList.toggle("shadow", window.scrollY > 0);
+            nav.classList.toggle("bg-white", window.scrollY > 0);
         })
     </script>
 

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
     margin: 0;
@@ -7,6 +8,11 @@
 
 html {
     font-size: 16px;
+}
+
+button,
+a {
+    outline: none;
 }
 
 .h1,
@@ -53,6 +59,11 @@ nav.navbar {
     width: 100%;
     z-index: 999;
     font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.bg-white {
     background-color: #fff;
 }
 
@@ -124,11 +135,12 @@ nav .my__nav-link:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 80vh;
 }
 
 footer {
     width: 100%;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,4 +207,96 @@ footer>span {
     .wrapper {
         height: 100%;
     }
+}
+
+/* Blog */
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.blog-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 0.1rem solid #d6d6d6;
+    background-color: #FAFAFC;
+}
+
+.blog {
+    position: relative;
+}
+
+.right-info {
+    position: sticky !important;
+    top: 120px !important;
+}
+
+.blog__item {
+    padding: 1rem .5rem;
+    align-items: center;
+    border-top: 0.1rem solid #d6d6d6;
+    transition: all .5s;
+    /* box-shadow: 10px 5px 5px red; */
+}
+
+.blog__item:hover {
+    /* background-color: #fff; */
+    box-shadow: 0px 15px 10px -15px #111;
+}
+
+.blog__item:hover .blog__icon {
+    opacity: 1;
+    transition: all .8s;
+}
+
+.blog__item:hover .blog__data {
+    opacity: .9;
+}
+
+.month {
+    margin-top: 1rem;
+    padding: 8px 25px 11px;
+    display: inline-block;
+    border-radius: 50px;
+    background: #eee;
+    /* top: 100px; */
+    font-size: 20px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.blog__date {
+    color: #ababab !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px !important;
+    transition: all .5s;
+}
+
+.blog__icon {
+    padding-right: 1rem;
+    opacity: 0;
+    color: #000;
+    font-size: 2rem;
+    transition: all .2s;
+}
+
+.blog__block {
+    display: block;
+    color: #000;
+}
+
+.right-info p {
+    line-height: 1.5;
+    letter-spacing: .4px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .75);
+}
+
+.right-info {
+    background-color: #ffffff4f;
+    margin: 1rem 0 1rem 1rem;
+    box-shadow: 4px 4px 12px 0px #585858;
+    border-radius: 5px;
 }
